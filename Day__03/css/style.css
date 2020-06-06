@@ -1,0 +1,28 @@
+img {   
+    width:200px;
+    height:100px;
+}
+#image-2 {
+    width:300px;
+    height:300px;
+}
+.image-3 {
+    width:300px;
+    height:100px;
+}
+
+ol.olist {
+    border: 1px solid #cc6af3;
+    background-color: antiquewhite;
+}
+
+ol.olist li {
+    background-color: aquamarine;
+    list-style-type: none;
+    border-bottom: 2px solid #1e04d6;
+}
+
+ol.olist li:first-child{
+    border: 3px dotted #19dc49;
+    background-color: #f3107b;
+}
