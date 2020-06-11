@@ -1,0 +1,398 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+img {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+/* ========== Adding Fonts ========= */
+
+@font-face{
+    font-family: myfont;
+    src: url(../fonts/MetalMania-Regular.ttf);
+}
+
+@font-face {
+  font-family: aladin;
+  src: url(../fonts/Aladin-Regular.ttf);
+}
+
+@font-face {
+  font-family: allerta;
+  src: url(../fonts/allerta_medium.ttf);
+}
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: #5b5b5d  ;
+  font-family: myfont; /* myfont from allerta */
+  text-align: justify;
+}
+
+p{
+    color: #827e88;
+}
+a{
+  color:#46d692 ;
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+
+.container{
+    width: 960px;
+    height: auto;
+    background-color: aquamarine;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 100px;
+    
+}
+
+.container .cv{
+    text-align: center;
+    text-transform: capitalize; 
+}
+
+.container .photo{
+    height: auto;
+    width: 400px;
+    float: left;
+    align-content: center;
+    margin-top: 5px;
+}
+.container .photo .id{
+    height: 300px;
+    width: 290px;
+    border: 3px solid #cbd1c3 ;
+    display: inline-block;
+    text-align: center;
+    margin-left: 55px;
+    
+}
+
+.container .photo .id img{
+    height: 280px;
+    width: 250px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+.container .photo .idbox{
+    width: 250px;
+    margin-left: 55px;
+    margin-top: 50px;
+}
+
+.container .photo .idbox .edu h2{
+    
+    text-transform: uppercase;
+    font-family: myfont; /* myfont from aladin */
+}
+
+.container .photo .idbox .edu p{
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.container .photo .idbox .exp{
+    margin-top: 50px;
+}
+
+.container .photo .idbox .exp h2{
+    text-transform: uppercase;
+}
+
+.container .photo .idbox .exp p{
+    text-transform: capitalize;
+}
+
+.container .photo .idbox .exp .sub1{
+    margin-top: 20px;
+}
+
+.container .photo .idbox .exp .sub1 .blk1{
+    height: 10px;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.container .photo .idbox .exp .rate{
+    margin-top: 2px;
+}
+
+.container .photo .idbox .exp .sub1 .rt1{
+    width: 80%;
+    float: left;
+}
+
+.container .photo .idbox .exp .sub1 .bx1{
+    width: 20%;
+    height: 10px;
+    background-color: #e5796e ;
+    float: right;
+}
+
+.container .photo .idbox .exp .sub2{
+    margin-top: 40px;
+}
+
+.container .photo .idbox .exp .sub2 .blk2{
+    height: 10px;
+    width: 100%;
+    background-color: dimgrey;
+}
+.container .photo .idbox .exp .sub2 .rt2{
+    width: 78%;
+    float: left;
+}
+
+.container .photo .idbox .exp .sub2 .bx2{
+    width: 22%;
+    height: 10px;
+    background-color: #e5796e ;
+    float: right;
+}
+
+.container .photo .idbox .exp .sub3{
+    margin-top: 40px;
+}
+
+.container .photo .idbox .exp .sub3 .blk3{
+    height: 10px;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.container .photo .idbox .exp .sub3 .rt3{
+    width: 95%;
+    float: left;
+}
+
+.container .photo .idbox .exp .sub3 .bx3{
+    width: 5%;
+    height: 10px;
+    background-color: #e5796e ;
+    float: right;
+}
+
+.container .obj{
+    height: auto;
+    width: 530px;
+    float: right;
+}
+
+.obj{
+    
+}
+
+.obj .nm{
+    margin-top: 15px;
+}
+
+.obj .nm h2{
+    font-size: 40px;
+    font-family: allerta;
+    
+}
+.obj .nm h4{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.obj .birth{
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.obj .birth p{
+    margin-top: 3px;
+}
+
+.obj .me{
+    margin-top: 50px;
+}
+
+.obj .me h2{
+    text-transform: uppercase;
+}
+
+.obj .me p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.obj .border{
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 69px;
+}
+
+.obj .skill{
+    margin-top: 50px;
+    
+}
+
+.obj .skill h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.obj .skill p{
+    margin-top: 20px;
+}
+.obj .skill ul li{
+    margin-top: 8px;
+    text-decoration: inherit;
+    list-style-type: disc;
+}
+
+/* @Media Query */
+
+@media only screen and (max-width: 740px){
+    
+    .container{
+        width: auto;
+        height: auto;
+        background-color: aquamarine;
+        margin: 0 auto;
+        border: 1px solid black;
+        margin-top: ;
+        display:block;
+    
+    }
+    
+
+    .container .photo .id{
+        height: 300px;
+        width: 290px;
+        border: 3px solid #cbd1c3 ;
+        display: inline-block;
+        text-align: center;
+        margin-left: 55px;
+
+    }
+    
+    .container .photo {
+        width: 350px;
+    }
+
+    .container .photo .id img{
+        height: 280px;
+        width: 240px;
+        margin-top: 5px;
+        border: 1px solid black;
+    }
+    
+    .obj{
+        display: block;
+    }
+    .cv{
+        width: auto;
+        text-align: center;
+    }
+    .nm{
+        width: 300px;
+        margin-left: 210px;
+    }
+    .birth{
+        width: 300px;
+        margin-left: 210px;
+    }
+    .me{
+        width: 300px;
+        margin-left: 210px;
+    }
+    .border{
+        width: auto;
+    }
+    .skill{
+        width: 300px;
+        margin-left: 210px;
+    }
+    
+}
+
+/* Kindle Fire HDX Linux*/
+
+@media only screen and (max-width: 1280px) and (min-width: 800px) {
+    
+    .container {
+        max-width: 800px;
+    }
+    
+    .photo {
+        
+    }
+    
+    .obj {
+        width: 300px;
+    }
+
+    
+}
+
+
+
+.skill .font{
+    font-family: myfont;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

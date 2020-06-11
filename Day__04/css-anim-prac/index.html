@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="author" content="Md. Mahfuzur Rahman Munna">
+    <title> CSS Animation Practice - 01</title>
+    
+    <style>
+        
+        body {
+            max-width: 200px;
+            margin: auto;
+            padding: 75px;
+        }
+    
+        .child {
+            width: 150px;
+            height: 100px;
+            background-color: darkgreen;
+            position: relative;
+            animation: myanimation ease 5s infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes myanimation {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            
+            20% {
+                left: -50px;
+                top: 0px;
+            }
+            
+            40% {
+                left: -50px;
+                top: 50px;
+            }
+            
+            60% {
+                left: -50px;
+                top: 150px;
+            }
+            
+            80% {
+                left: 0;
+                top: 150px;
+            }
+            
+            100% {
+                left: 0;
+                top: 0;
+            }
+            
+        }
+        
+    
+    </style>
+</head>
+    
+    
+<body>
+   
+   <div class="parent">
+
+        <div class="child"></div>
+       
+   </div>
+    
+    
+</body>
+</html>

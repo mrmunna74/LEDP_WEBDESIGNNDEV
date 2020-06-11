@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+html, body, section, div {
+    font-family: myFont;
+}
+@font-face {
+    font-family:myFont;
+    src: url(../fonts/ConcertOne-Regular.ttf);
+}
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+section {
+  width: 100%;
+}
+#title {
+    font-size: 50px;
+    color: #376193;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#photo {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+.tile-holders-2, .tile-data-2 {
+    display:inline;
+    font-family: inherit;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.tile-holders-2 {
+    
+    font-weight: bold;
+}
+
+.tile-holders {
+    font-weight: bold;
+    font-family: inherit;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.tile-data {
+    font-family: inherit;
+    padding-top: 5px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+/* ---- ------- -- -- - -- - - - -- - --   */
+
+.tiles {
+    font-size: 30px;
+    font-weight: bold;
+    /*font-family:  Charcoal, sans-serif;*/
+    color: #376193;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 2px solid #376193;
+}
+
+@media only screen and (min-width:420px) {
+    
+    .primary-info {
+        border-top: 60px solid #376193;
+        padding: 50px;
+    }
+
+    .secondary-info {
+        border-bottom: 60px solid #376193;
+        padding: 40px;
+    }
+    
+    #photo {
+        margin-left: auto;
+    }
+    
+    #title {
+        text-align: center;
+    }
+     
+}
+@media only screen and (min-width:1280px) {
+    
+    .primary-info {
+        float: left;
+        width: 43%;
+        border-top: 60px solid #376193;
+        padding: 50px;
+    }
+    .secondary-info {
+        float: right;
+        width: 57%;
+        border-bottom: 60px solid #376193;
+        padding: 40px;
+    }
+    
+    #title {
+        text-align: justify;
+    }
+     
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

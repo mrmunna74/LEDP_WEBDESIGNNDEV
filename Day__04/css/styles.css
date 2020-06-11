@@ -1,0 +1,43 @@
+.parent {
+    border: 1px solid blue;
+    color: #0074d9;
+    padding: 20px;
+}
+
+.element {
+    border: 1px dotted #000;
+    background-color: #eee;
+    padding: 20px;
+    color: #000;
+    position: relative;
+    margin-top: 10px;
+    animation: push ease 5s alternate infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes push {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    
+    50% {
+        left: -200px;
+        top: 150px;
+    }
+    
+    100% {
+        top: 150px;
+        left: 500px;
+    }
+}
+
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
